@@ -4,9 +4,8 @@
 #+ tags: 
 #+   - BGT Wegdeel functie
 #+ method: GET
-#+ pagination: 50
 #+ defaults: 
-#+ - functie: http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_rijbaanregionaleweg
+#+ - functie: <http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_rijbaanregionaleweg>
 
 PREFIX bgt: <http://connecteddata.nl/bgt/def/objecttype/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
