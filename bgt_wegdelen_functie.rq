@@ -16,7 +16,7 @@ prefix bgtwl: <http://connecteddata.nl/bgt/def/waardenlijst/>
 
 select * where { 
 	?s a bgt:wegdeel ;
-    bgtprop:functie_functieWGD ?functie_iri ;
+    bgtprop:functie_functieWGD ?_functie_iri ;
     bgtprop:fysiekVoorkomen_fysiekVoorkomenWGD ?fv ;
     bgtprop:bronhouder_bronhouder ?bh .
     ?s geo:hasGeometry/geo:asWKT ?geo.
