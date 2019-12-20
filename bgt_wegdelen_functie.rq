@@ -1,0 +1,32 @@
+  
+#+ endpoint: https://dydra.com/niels/bgt_test/sparql
+#+ summary: Wegdelen per functie uit een bgt testset van Noord-Holland
+#+ tags: 
+#+   - BGT Wegdeel functie
+
+#+ enumerate:
+#+   - functie: 
+#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_rijbaanregionaleweg
+#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_voetpad
+#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_rijbaanlokaleweg
+#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_rijbaanautoweg
+#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_rijbaanautosnelweg
+#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_parkeervlak
+#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_OV-baan
+#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_inrit
+#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_fietspad
+
+
+PREFIX bgt: <http://connecteddata.nl/bgt/def/objecttype/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX bgtprop: <http://connecteddata.nl/bgt/def/eigenschap/>
+prefix data: <http://connecteddata.nl/id/data/> 
+prefix bgtwl: <http://connecteddata.nl/bgt/def/waardenlijst/>
+
+select * where { 
+	?s a bgt:wegdeel ;
+    bgtprop:functie_functieWGD ?functie_iri ;
+    bgtprop:fysiekVoorkomen_fysiekVoorkomenWGD ?fv ;
+    bgtprop:bronhouder_bronhouder ?bh .
+    ?s geo:hasGeometry/geo:asWKT ?geo.
+} limit 1000
