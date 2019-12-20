@@ -3,6 +3,8 @@
 #+ summary: Wegdelen per functie uit een bgt testset van Noord-Holland
 #+ tags: 
 #+   - BGT Wegdeel functie
+#+ method: GET
+#+ pagination: 50
 #+ defaults: 
 #+ - functie: http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_rijbaanregionaleweg
 #+ enumerate:
