@@ -7,18 +7,6 @@
 #+ pagination: 50
 #+ defaults: 
 #+ - functie: http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_rijbaanregionaleweg
-#+ enumerate:
-#+   - functie: 
-#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_rijbaanregionaleweg
-#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_voetpad
-#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_rijbaanlokaleweg
-#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_rijbaanautoweg
-#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_rijbaanautosnelweg
-#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_parkeervlak
-#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_OV-baan
-#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_inrit
-#+      - http://connecteddata.nl/bgt/def/waardenlijst/functieWGD_fietspad
-
 
 PREFIX bgt: <http://connecteddata.nl/bgt/def/objecttype/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
