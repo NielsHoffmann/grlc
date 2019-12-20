@@ -1,0 +1,16 @@
+#+ endpoint: https://dydra.com/niels/bgt_test/sparql
+#+ summary: Wegdelen uit een bgt testset van Noord-Holland
+#+ tags: 
+#+   - BGT Wegdeel geosparql
+
+PREFIX bgt: <http://connecteddata.nl/bgt/def/objecttype/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX bgtprop: <http://connecteddata.nl/bgt/def/eigenschap/>
+prefix data: <http://connecteddata.nl/id/data/> 
+prefix bgtwl: <http://connecteddata.nl/bgt/def/waardenlijst/>
+
+select * where { 
+	?s a bgt:wegdeel ;
+    bgtprop:functie_functieWGD ?f .
+    ?s geo:hasGeometry/geo:asWKT ?geo.
+} limit 1000
