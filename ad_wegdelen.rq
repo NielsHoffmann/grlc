@@ -11,7 +11,6 @@ prefix data: <http://connecteddata.nl/id/data/>
 select * where { 
 	?s a ad:wegdeel ;
     		adprop:FUNCTIE ?f ;
-		adprop:GEBRUIKSFUNCTIE ?gf ;
-		adprop:VERHARDINGSCATEGORIE ?vh .
+		adprop:GEBRUIKSFUNCTIE ?gf .
     ?s geo:hasGeometry/geo:asWKT ?geo.
 } limit 1000
