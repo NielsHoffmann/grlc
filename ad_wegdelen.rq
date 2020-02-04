@@ -1,7 +1,7 @@
 #+ endpoint: https://api.labs.kadaster.nl/datasets/bgt-high3/Open-Areaaldata/services/Open-Areaaldata/sparql
 #+ summary: Wegdelen uit een areaalviewer testset van Noord-Holland
 #+ tags: 
-#+   - Areaaldata wegdeel geosparql
+#+   - Areaaldata wegdelen
 
 prefix ad: <http://otl.noord-holland.nl/areaaldata/def/objecttype/>
 PREFIX adprop: <http://otl.noord-holland.nl/areaaldata/def/eigenschap/>
@@ -9,7 +9,7 @@ PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 prefix data: <http://connecteddata.nl/id/data/> 
 
 select * where { 
-	?s a bgt:wegdeel ;
+	?s a ad:wegdeel ;
     adprop:FUNCTIE ?f .
     ?s geo:hasGeometry/geo:asWKT ?geo.
 } limit 1000
